@@ -11,10 +11,11 @@ let currencyConfig = {
 };
 
 currencySelect1.addEventListener("change", (e) => {
-	currencyConfig = {
-		currency: e.target.value,
-		amount: input1.value,
-	};
+	currencyConfig.currency = e.target.value;
+});
+
+input1.addEventListener("input", (e) => {
+	currencyConfig.amount = e.target.value;
 });
 
 function calculate() {
