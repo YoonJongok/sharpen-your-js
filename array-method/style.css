@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: "Roboto", sans-serif;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 30px;
+	height: 100vh;
+	overflow: hidden;
+	margin: 0;
+}
+
+.container {
+	min-width: 600px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 2rem;
+
+	.button-container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding-inline: 1rem;
+		gap: 1rem;
+		border-right: 1px solid black;
+
+		& button {
+			width: 180px;
+			height: 40px;
+			border-radius: 6px;
+			background-color: white;
+			border: 1px solid black;
+			cursor: pointer;
+		}
+	}
+}
+
+.detail-section {
+	height: 100%;
+	flex: 1;
+	flex-direction: column;
+	justify-content: flex-start;
+
+	.detail-head {
+		display: flex;
+		justify-content: space-between;
+		& h2:last-child {
+			font-weight: 400;
+		}
+	}
+
+	.divider {
+		margin: 6px 0;
+		width: 100%;
+		height: 1px;
+		background-color: black;
+	}
+
+	.detail-body {
+		display: flex;
+		flex-direction: column;
+		gap: 8px;
+		padding-block: 10px;
+		& div {
+			display: flex;
+			justify-content: space-between;
+
+			& p:last-child {
+				font-weight: 400;
+			}
+		}
+	}
+}
